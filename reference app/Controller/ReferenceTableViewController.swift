@@ -10,14 +10,26 @@ import UIKit
 
 class ReferenceTableViewController: UITableViewController {
     
+    var dreams: [Dream]!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dreams = Dream.load()
+        navigationItem.title = Dream.title
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10000
+        return dreams.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "gaudi")!
         
-        cell.textLabel?.text = "Row: \(indexPath.row)"
+        let dream = dreams[indexPath.row]
+        
+        cell.textLabel?.text = dream.name
+        cell.detailTextLabel?.text = dream.content
+        cell.imageView?.image = dream.image
         
         return cell
     }

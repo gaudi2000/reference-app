@@ -12,6 +12,7 @@
 		86FD815C222AB1BF00C8F7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FD815B222AB1BF00C8F7F2 /* Assets.xcassets */; };
 		86FD815F222AB1BF00C8F7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FD815D222AB1BF00C8F7F2 /* LaunchScreen.storyboard */; };
 		86FD8167222AB63200C8F7F2 /* ReferenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8166222AB63200C8F7F2 /* ReferenceTableViewController.swift */; };
+		D5B418F32233E7ED00EF1E51 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B418F22233E7ED00EF1E51 /* Dream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		86FD815E222AB1BF00C8F7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FD8160222AB1BF00C8F7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86FD8166222AB63200C8F7F2 /* ReferenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewController.swift; sourceTree = "<group>"; };
+		D5B418F22233E7ED00EF1E51 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		86FD8153222AB1BD00C8F7F2 /* reference app */ = {
 			isa = PBXGroup;
 			children = (
+				D5B418F12233E56700EF1E51 /* Controller */,
+				D5B418EF2233E53900EF1E51 /* Model */,
+				D5B418F02233E54500EF1E51 /* View */,
 				86FD8154222AB1BD00C8F7F2 /* AppDelegate.swift */,
-				86FD8158222AB1BD00C8F7F2 /* Main.storyboard */,
-				86FD8166222AB63200C8F7F2 /* ReferenceTableViewController.swift */,
 				86FD815B222AB1BF00C8F7F2 /* Assets.xcassets */,
 				86FD815D222AB1BF00C8F7F2 /* LaunchScreen.storyboard */,
 				86FD8160222AB1BF00C8F7F2 /* Info.plist */,
 			);
 			path = "reference app";
+			sourceTree = "<group>";
+		};
+		D5B418EF2233E53900EF1E51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5B418F22233E7ED00EF1E51 /* Dream.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5B418F02233E54500EF1E51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86FD8158222AB1BD00C8F7F2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5B418F12233E56700EF1E51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86FD8166222AB63200C8F7F2 /* ReferenceTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			files = (
 				86FD8155222AB1BD00C8F7F2 /* AppDelegate.swift in Sources */,
 				86FD8167222AB63200C8F7F2 /* ReferenceTableViewController.swift in Sources */,
+				D5B418F32233E7ED00EF1E51 /* Dream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A45R7KRWDN;
 				INFOPLIST_FILE = "reference app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A45R7KRWDN;
 				INFOPLIST_FILE = "reference app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
